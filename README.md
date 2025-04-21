@@ -55,7 +55,7 @@ License: MIT
 ## Installation Instructions
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ultimate-robots-scanner.git
+git clone https://github.com/0xPoyel/RoboSploit.git
 cd RoboSploitr
 
 # (Optional) Create a virtual environment
@@ -63,6 +63,53 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install dependencies
-pip install -r requirements.txt
+pip install -r requirements.txt --break-system-packages
 
 ```
+## Usage Instructions
+```bash
+# Full power: multi-threaded, HTTP/2, proxy, retry, custom output, and bug-only view
+python3 robosploit.py -l urls.txt -t 10 --http2 --proxy http://127.0.0.1:8080 \
+--retries 3 --timeout 12 --bugs-only -o output.json -f json
+
+# Basic Usage
+python3 robosploit.py https://example.com
+# Scan Multiple Targets
+python3 robosploit.py -l targets.txt
+# Save Results to JSON
+python3 robosploit.py https://example.com -o results.json -f json
+# Use Proxy & Enable HTTP/2
+python3 robosploit.py https://example.com -p http://127.0.0.1:8080 --http2
+# Show Only Vulnerable Endpoints
+python3 robosploit.py https://example.com --bugs-only
+```
+## Output
+- Example Output (Terminal)
+```less
+[+] GET BYPASSED (Header:X-Real-IP): https://target.com/admin
+[+] Vulnerable paths found for https://target.com:
+  - GET /admin (Bypass: Header:X-Real-IP)
+  - POST /backup (Bypass: PathVariant:/backup%00.json)
+```
+- Example Output (JSON)
+```json
+[
+  {
+    "url": "https://target.com",
+    "timestamp": "2025-04-21 14:22:01",
+    "accessible_paths": [
+      {
+        "path": "https://target.com/admin",
+        "method": "GET",
+        "status": 200,
+        "length": 5321,
+        "bypass_technique": "Header:X-Real-IP",
+        "effective_url": "https://target.com/admin",
+        "http_version": "2"
+      }
+    ]
+  }
+]
+```
+## ⚠️ Reminder
+This tool is intended for use only on systems you have explicit permission to test. Unauthorized scanning is illegal and unethical. Always follow the rules of engagement when working on bug bounty platforms or client assessments.
