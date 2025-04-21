@@ -11,9 +11,9 @@
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:zabedullahpoyelcontact@gmail.com)
 
 ## Description
-This tool fetches and analyzes the `robots.txt` file of a target domain and tests the listed "Disallow" paths for unauthorized access using a variety of bypass techniques. It helps identify potential misconfigurations, exposed endpoints, or access control flaws.
+This tool fetches and analyzes the `robots.txt` file of a target domain and tests the listed `"Disallow"` paths for unauthorized access using a variety of bypass techniques. It helps identify potential misconfigurations, exposed endpoints, or access control flaws.
 
-Ideal for reconnaissance during bug bounty hunting or professional security assessments.
+Ideal for reconnaissance during bug bug bounty hunters and penetration testers or professional security assessments.
 
 ## Features
 
