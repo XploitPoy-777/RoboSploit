@@ -47,7 +47,7 @@ ______      _           _____       _       _ _
                              |_|""")
     
     print(Fore.YELLOW + "──────────────────────────────────────────────" + 
-          Fore.RED + "[By 0xPoyel]" + 
+          Fore.RED + "[By XploitPoy-777]" + 
           Fore.YELLOW + "──────" + Style.RESET_ALL)
     print() 
 
