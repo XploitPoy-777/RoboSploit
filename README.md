@@ -1,36 +1,38 @@
-# RoboTester Ultimate 🔍
+# Robots.txt Tester Pro 🔍
 
-Advanced robots.txt scanner with bypass capabilities, rate limiting, and HTTP/2 support
+![Banner](assets/banner.png)  
+*Advanced web path discovery tool with bypass capabilities*  
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-![Banner](https://i.imgur.com/example.png) *(Optional banner image)*
+---
 
-## Description
-A powerful security tool for testing `robots.txt` implementations, identifying accessible disallowed paths using advanced bypass techniques including:
-- 40+ header-based bypass methods
-- 60+ path traversal variants
-- Multi-method testing (GET/POST/PUT/DELETE)
-- HTTP/2 and proxy support
+## Table of Contents
+- [Features](#features-)
+- [Installation](#installation-)
+- [Usage](#usage-)
+  - [Basic Scan](#basic-scan)
+  - [Advanced Options](#advanced-options)
+- [Examples](#examples-)
+- [Output Samples](#output-samples-)
+- [Dependencies](#dependencies-)
+- [Contributing](#contributing-)
+- [Disclaimer](#disclaimer-)
 
-## Features
-- ✅ Comprehensive 401/403 bypass techniques
-- 🔄 HTTP/2 protocol support
-- 🚦 Rate limiting control
-- 📊 JSON/CSV output formats
-- 🕵️ Bug-focused scanning mode
-- 🧵 Multi-threaded execution
-- 🔄 Automatic retry mechanism
-- 🔒 SSL verification toggle
+---
 
-## Tools Required
-- Python 3.8+
-- pip package manager
-- Internet connection
+## Features ✨
+| Category              | Capabilities |
+|-----------------------|--------------|
+| **Bypass Techniques** | 34+ IP spoofing headers, 60+ path traversal variants |
+| **Protocol Support**  | HTTP/1.1 and HTTP/2 |
+| **Performance**       | Multi-threading, Rate limiting, Retry mechanism |
+| **Reporting**         | JSON/CSV outputs with full response metadata |
+| **Stealth**           | Proxy support, User-agent rotation |
 
-## Installation
+---
+
+## Installation 📥
+### Quick Install
 ```bash
-# Clone repository
-git clone https://github.com/yourusername/robotester-ultimate.git
-cd robotester-ultimate
-
-# Install dependencies
-pip install -r requirements.txt
+pip install robots-tester-pro
