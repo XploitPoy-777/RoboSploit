@@ -53,7 +53,7 @@ License: MIT
 ```bash
 # Clone the repository
 git clone https://github.com/XploitPoy-777/RoboSploit.git
-cd RoboSploitr
+cd RoboSploit
 
 # (Optional) Create a virtual environment
 python3 -m venv venv
