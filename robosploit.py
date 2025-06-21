@@ -77,7 +77,7 @@ USER_AGENTS = [
     'Googlebot/2.1 (+http://www.google.com/bot.html)'
 ]
 
-HTTP_METHODS = ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS', 'HEAD']
+HTTP_METHODS = ['GET', 'POST', 'PUT', 'DELETE', 'PATCH']
 
 # Comprehensive IP spoofing headers for 401/403 bypass
 BYPASS_HEADERS = [
@@ -303,10 +303,6 @@ class UltimateScanner:
                 response = self.session.delete(url, headers=final_headers, timeout=self.timeout, allow_redirects=False)
             elif method == 'PATCH':
                 response = self.session.patch(url, headers=final_headers, timeout=self.timeout, allow_redirects=False, data=data or {'test': '1'})
-            elif method == 'OPTIONS':
-                response = self.session.options(url, headers=final_headers, timeout=self.timeout, allow_redirects=False)
-            elif method == 'HEAD':
-                response = self.session.head(url, headers=final_headers, timeout=self.timeout, allow_redirects=False)
             
             return {
                 'status': response.status_code,
