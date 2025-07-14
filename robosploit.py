@@ -1,19 +1,4 @@
 #!/usr/bin/env python3
-"""
-ULTIMATE Robots.txt Scanner with:
-- HTTP/2 support
-- Rate limiting control
-- Advanced 401/403 bypass techniques
-- Comprehensive path traversal variants
-- Multiple HTTP method testing
-- Proxy support (HTTP/SOCKS)
-- JSON/CSV output options
-- Bug-focused mode
-- Multi-threading
-- Retry mechanism
-- SSL verification toggle
-"""
-
 import requests
 from urllib.parse import urljoin, urlparse
 import argparse
